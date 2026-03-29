@@ -347,10 +347,10 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/motivation.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
+          As the number of interconnected chips increases, the total number of required pins for both SPI and I2C grows accordingly. In Fig left, the total number of communication pins required for SPI increases sharply while I2C exhibits a more linear growth. 16-pin package occupies only 40% of the area of a 20-pin package and incurs just 60% of the cost.
         </h2>
       </div>
     </div>
@@ -364,41 +364,40 @@
     <div class="container">
       <h2 class="title">Protocol </h2>
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/protocol.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Two priority LinkBo messages format. HP and LP messages have different SYNC and PAYLOAD fields, but share the same CRC and ACK fields. Only LP messages include a SIZE field. HP messages are always completed within 50 μs, whereas the duration of LP messages depends on the payload size. In PAYLOAD, one byte in LP message contain 8 Manchester bits. The re-synchronization process for Manchester code during the transmission. The depth of the red edge represents the severity of the error. For multi-device transmission, arbitration with Wired-AND logic and use address message for configuration.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
 </div>
 </section>
 <!-- End image carousel -->
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Simulation and Hardware Architecture </h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/hw.png" alt="First research result visualization" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          Top left: Ideal LinkBo model and testbench. The testbench can send messages to any module and receive them from another module.
+          Top right: Channel model with parasitic parameter. In this figure, the TX and RX serve as interface between LinkBo and channel. The inductance, resistance and capacitance simulate the real wire characteristics.
+          Bottom left: (1) Top-level architecture. LinkBo module is part of digital system in each chip, consisting of synchronizer, TOP FSM, RX, TX, driver, and PSC(for both TX and RX). (2) Transmitter architecture. TX is responsible for sending any priority message. (3) Receiver architecture. The RX is responsible for receiving messages, synchronizing, and sending an acknowledgment (ACK) signal. (4) Driver architecture. Driver consists of one Manchester encoder (XOR gate) and 4 MUXes.
+          Bottom right: FPGA test setup. Two FPGAs are connected via a single wire, sharing the same PL design. Buttons and switches are used for signal input, while LEDs display the transmitted and received data.
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
 
 <section class="hero is-small">
@@ -408,10 +407,10 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/res.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Results from simulation and FPGA test.
         </h2>
       </div>
     </div>
@@ -425,7 +424,7 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">Student Contest Poster</h2>
 
       <img src="static/images/LinkBo_Poster.png" alt="Poster" style="width: 100%; height: auto; border-radius: 8px;">
 
