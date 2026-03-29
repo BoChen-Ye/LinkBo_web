@@ -199,21 +199,21 @@
     </button>
     <div class="more-works-dropdown" id="moreWorksDropdown">
       <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
+        <h4>More Works from Me</h4>
         <button class="close-btn" onclick="toggleMoreWorks()">
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="works-list">
         <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/2509.01339v1" class="work-item" target="_blank">
+        <a href="https://arxiv.org/abs/id1" class="work-item" target="_blank">
           <div class="work-info">
             <!-- TODO: Replace with actual paper title -->
-            <h5>LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications</h5>
+            <h5>Paper Title 1</h5>
             <!-- TODO: Replace with brief description -->
-            <p>Cost-effective embedded systems necessitate utilizing the single-wire communication protocol for inter-chip communication, thanks to its reduced pin count in comparison to the multi-wire I2C or SPI protocols. However, current single-wire protocols suffer from increased latency, restricted throughput, and lack of robustness. This paper presents LinkBo, an innovative single-wire protocol that offers reduced latency, enhanced throughput, and greater robustness with hardware-interrupt for variable-distance inter-chip communication. The LinkBo protocol-level guarantees that high-priority messages are delivered with an error detection feature in just 50.4 µs, surpassing current commercial options, 1-wire and UNI/O by at least 20X and 6.3X, respectively. In addition, we present the hardware architecture for this new protocol and its performance evaluation on a hardware platform consisting of two FPGAs. Our findings demonstrate that the protocol reliably supports wire lengths up to 15 meters with a data rate of 300 kbps, while reaching a maximum data rate of 7.5 Mbps over an 11 cm wire, providing reliable performance for varying inter-chip communication distances.</p>
+            <p>text</p>
             <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">2025 IEEE 38th International System-on-Chip Conference (SOCC)</span>
+            <span class="work-venue"> conference</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
@@ -426,14 +426,21 @@
     <div class="container">
       <h2 class="title">Student Contest Poster</h2>
 
-      <img src="static/images/LinkBo_Poster.png" alt="Poster" style="width: 100%; height: auto; border-radius: 8px;">
-
-      <div style="margin-top: 1rem;">
-        <a class="button is-dark" href="static/pdfs/LinkBo_Poster.pdf" target="_blank">
-          <span class="icon"><i class="fas fa-file-pdf"></i></span>
-          <span>Open Poster PDF</span>
-        </a>
+      <div style="
+        max-height: 500px;
+        overflow-y: auto;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        background: white;
+      ">
+        <img
+          src="static/images/LinkBo_Poster.png"
+          alt="Poster"
+          style="width: 100%; height: auto; display: block;"
+        >
       </div>
+
+      
     </div>
   </div>
 </section>
